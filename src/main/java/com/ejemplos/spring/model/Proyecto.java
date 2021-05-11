@@ -14,7 +14,7 @@ import javax.persistence.Id;
 @Entity
 public class Proyecto {
 
-	// @Id
+	@Id
 	private int idproyecto;
 
 	// @Column
