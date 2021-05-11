@@ -14,7 +14,7 @@ import javax.persistence.Id;
 @Entity
 public class Cliente {
 
-	// @Id
+	@Id
 	private int idcliente;
 
 	// @Column
