@@ -18,7 +18,7 @@ import org.springframework.web.client.RestTemplate;
 //@RestController
 //@RequestMapping("clientes")
 @SpringBootApplication
-public class ClienteRest implements CommandLineRunner {
+public class RestController implements CommandLineRunner {
 	
 	private ClienteRepositoryImpl clienteRepository;
 	
@@ -28,7 +28,7 @@ public class ClienteRest implements CommandLineRunner {
 		//return clienteRepository.findAll();
 	//}
 
-	SpringApplication app = new SpringApplication(ClienteRest.class);
+	SpringApplication app = new SpringApplication(RestController.class);
 	
 	
 	
