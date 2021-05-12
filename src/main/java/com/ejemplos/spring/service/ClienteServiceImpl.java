@@ -14,7 +14,7 @@ import com.ejemplos.spring.repository.ClienteRepository;
 
 @Service
 public class ClienteServiceImpl implements ClienteService {
-
+	
 	@Autowired
 	ClienteRepository<Cliente> repo;
 
