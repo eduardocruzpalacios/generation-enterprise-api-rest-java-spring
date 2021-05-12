@@ -7,34 +7,35 @@
 
 package com.ejemplos.spring.model;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "clientes")
 public class Cliente {
 
 	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int idcliente;
 
-	@Column
 	private String nombre;
 
-	@Column
-	private String description;
+	private String descripcion;
 
-	@Column
 	private String logo;
 
 	public Cliente() {
 		super();
 	}
 
-	public Cliente(int idcliente, String nombre, String description, String logo) {
+	public Cliente(int idcliente, String nombre, String descripcion, String logo) {
 		super();
 		this.idcliente = idcliente;
 		this.nombre = nombre;
-		this.description = description;
+		this.descripcion = descripcion;
 		this.logo = logo;
 	}
 
@@ -54,12 +55,12 @@ public class Cliente {
 		this.nombre = nombre;
 	}
 
-	public String getDescription() {
-		return description;
+	public String getDescripcion() {
+		return descripcion;
 	}
 
-	public void setDescription(String description) {
-		this.description = description;
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
 	}
 
 	public String getLogo() {
@@ -72,7 +73,7 @@ public class Cliente {
 
 	@Override
 	public String toString() {
-		return "Cliente [idcliente=" + idcliente + ", nombre=" + nombre + ", description=" + description + ", logo="
+		return "Cliente [idcliente=" + idcliente + ", nombre=" + nombre + ", description=" + descripcion + ", logo="
 				+ logo + "]";
 	}
 

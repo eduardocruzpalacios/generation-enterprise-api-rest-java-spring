@@ -7,11 +7,8 @@ package com.ejemplos.spring.service;
 
 import java.util.List;
 
-import org.springframework.stereotype.Service;
-
 import com.ejemplos.spring.model.Proyecto;
 
-@Service
 public interface ProyectoService {
 
 	// Metodo para listar proyectos

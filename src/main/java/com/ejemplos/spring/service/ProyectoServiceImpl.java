@@ -17,7 +17,7 @@ import com.ejemplos.spring.repository.ProyectoRepository;
 public class ProyectoServiceImpl implements ProyectoService {
 
 	@Autowired
-	ProyectoRepository<Proyecto> repo;
+	ProyectoRepository repo;
 
 	// Metodo para listar
 	public List<Proyecto> findAll() {

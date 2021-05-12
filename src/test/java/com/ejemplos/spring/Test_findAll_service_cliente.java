@@ -10,6 +10,7 @@ import com.ejemplos.spring.service.ClienteServiceImpl;
 
 @SpringBootTest
 public class Test_findAll_service_cliente {
+	/*
 
 	@Autowired
 	private ClienteServiceImpl clienteServiceImpl;
@@ -28,4 +29,5 @@ public class Test_findAll_service_cliente {
 	void devuelveCosas() {
 		assertThat(clienteServiceImpl.findAll()).isNotNull();
 	}
+	*/
 }

@@ -8,7 +8,11 @@
 package com.ejemplos.spring.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface ClienteRepository<Cliente> extends JpaRepository<Cliente, Integer> {
+import com.ejemplos.spring.model.Cliente;
+
+@Repository
+public interface ClienteRepository extends JpaRepository<Cliente, Integer> {
 
 }

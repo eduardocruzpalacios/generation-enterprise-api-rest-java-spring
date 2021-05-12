@@ -7,40 +7,42 @@
 
 package com.ejemplos.spring.model;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "proyectos")
 public class Proyecto {
 
 	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int idproyecto;
 
-	@Column
 	private String proyecto;
 
-	@Column
 	private String fechafin;
 
-	@Column
 	private String resumen;
 
-	@Column
 	private String descripcion;
 
-	@Column
 	private String imagen;
 
-	@Column
-	private int empresa;
+	@ManyToOne
+	@JoinColumn(name = "empresa")
+	private Cliente cliente;
 
 	public Proyecto() {
 		super();
 	}
 
 	public Proyecto(int idproyecto, String proyecto, String fechafin, String resumen, String descripcion, String imagen,
-			int empresa) {
+			Cliente cliente) {
 		super();
 		this.idproyecto = idproyecto;
 		this.proyecto = proyecto;
@@ -48,7 +50,7 @@ public class Proyecto {
 		this.resumen = resumen;
 		this.descripcion = descripcion;
 		this.imagen = imagen;
-		this.empresa = empresa;
+		this.cliente = cliente;
 	}
 
 	public int getIdproyecto() {
@@ -99,18 +101,18 @@ public class Proyecto {
 		this.imagen = imagen;
 	}
 
-	public int getEmpresa() {
-		return empresa;
+	public Cliente getCliente() {
+		return cliente;
 	}
 
-	public void setEmpresa(int empresa) {
-		this.empresa = empresa;
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
 	}
 
 	@Override
 	public String toString() {
 		return "Proyecto [idproyecto=" + idproyecto + ", proyecto=" + proyecto + ", fechafin=" + fechafin + ", resumen="
-				+ resumen + ", descripcion=" + descripcion + ", imagen=" + imagen + ", empresa=" + empresa + "]";
+				+ resumen + ", descripcion=" + descripcion + ", imagen=" + imagen + ", cliente=" + cliente + "]";
 	}
 
 }

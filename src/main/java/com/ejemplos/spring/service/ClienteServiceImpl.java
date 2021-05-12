@@ -16,7 +16,7 @@ import com.ejemplos.spring.repository.ClienteRepository;
 public class ClienteServiceImpl implements ClienteService {
 	
 	@Autowired
-	ClienteRepository<Cliente> repo;
+	ClienteRepository repo;
 
 	// metodo para listar clientes
 	public List<Cliente> findAll() {

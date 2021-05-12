@@ -8,7 +8,11 @@
 package com.ejemplos.spring.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface ProyectoRepository<Proyecto> extends JpaRepository<Proyecto, Integer> {
+import com.ejemplos.spring.model.Proyecto;
+
+@Repository
+public interface ProyectoRepository extends JpaRepository<Proyecto, Integer> {
 
 }
