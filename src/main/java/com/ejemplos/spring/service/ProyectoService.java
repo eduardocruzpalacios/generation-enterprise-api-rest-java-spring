@@ -1,5 +1,5 @@
 /*
- * @Author Maria y Andrei
+ * @Author Maria
  * @Version 1.0
  */
 
@@ -10,8 +10,11 @@ import java.util.List;
 import com.ejemplos.spring.model.Proyecto;
 
 public interface ProyectoService {
-	
-	//Metodo para listar
+
+	// Metodo para listar proyectos
 	public List<Proyecto> findAll();
-	
+
+	// Metodo para guardar un nuevo proyecto
+	public Proyecto save(Proyecto p);
+
 }
