@@ -1,5 +1,5 @@
 /*
- * @Author Maria y Andrei
+ * @Author Maria
  * @Version 1.0
  */
 
@@ -22,6 +22,11 @@ public class ProyectoServiceImpl implements ProyectoService {
 	// Metodo para listar
 	public List<Proyecto> findAll() {
 		return repo.findAll();
+	}
+
+	@Override
+	public Proyecto save(Proyecto p) {
+		return repo.save(p);
 	}
 
 }
