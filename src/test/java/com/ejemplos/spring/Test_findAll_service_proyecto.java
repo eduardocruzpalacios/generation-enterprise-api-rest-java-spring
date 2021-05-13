@@ -19,7 +19,7 @@ import com.ejemplos.spring.service.ProyectoServiceImpl;
 
 @SpringBootTest
 public class Test_findAll_service_proyecto {
-	/*
+	
  
 	@Autowired
 	private ProyectoServiceImpl proyectoServiceImpl;
@@ -43,6 +43,6 @@ public class Test_findAll_service_proyecto {
 	@Test
 	void devuelveCosas() {
 		assertThat(proyectoServiceImpl.findAll()).isNotNull();
-	}*/
+	}
 	
 }
