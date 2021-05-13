@@ -11,5 +11,8 @@ public interface PersonaService {
 
 	// metodo para listar personas
 	public List<Persona> findAll();
+	
+	// Metodo para guardar una nueva persona
+	public Persona save(Persona p);
 
 }

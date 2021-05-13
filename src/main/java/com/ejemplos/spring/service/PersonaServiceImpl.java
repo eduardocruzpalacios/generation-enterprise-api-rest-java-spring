@@ -18,7 +18,14 @@ public class PersonaServiceImpl implements PersonaService {
 	PersonaRepository repo;
 
 	// metodo para listar personas
+	@Override
 	public List<Persona> findAll() {
 		return repo.findAll();
+	}
+
+	// metodo para guardar 1 persona
+	@Override
+	public Persona save(Persona p) {
+		return repo.save(p);
 	}
 }
