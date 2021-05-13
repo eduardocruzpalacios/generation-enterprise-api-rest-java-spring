@@ -21,6 +21,7 @@ import com.ejemplos.spring.model.Persona;
 import com.ejemplos.spring.model.Proyecto;
 import com.ejemplos.spring.service.CargoService;
 import com.ejemplos.spring.service.ClienteService;
+import com.ejemplos.spring.service.PersonaService;
 import com.ejemplos.spring.service.ProyectoService;
 
 @RestController
@@ -49,10 +50,10 @@ public class RESTController {
 	public List<Proyecto> getProyectos() {
 		return proyectoService.findAll();
 	}
-	
-	@GetMapping("/equipo") //página del equipo
-	public List <Persona>getEquipo(){
-		return personaService.
+
+	@GetMapping("/equipo") // página del equipo
+	public List<Persona> getEquipo() {
+		return personaService.findAll();
 	}
 
 }
