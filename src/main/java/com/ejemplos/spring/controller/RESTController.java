@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.ejemplos.spring.model.Cliente;
 import com.ejemplos.spring.model.Proyecto;
+import com.ejemplos.spring.service.CargoService;
 import com.ejemplos.spring.service.ClienteService;
 import com.ejemplos.spring.service.ProyectoService;
 
@@ -28,6 +29,10 @@ public class RESTController {
 	private ClienteService clienteService;
 	@Autowired
 	private ProyectoService proyectoService;
+	@Autowired
+	private PersonaService personaService;
+	@Autowired
+	private CargoService cargoService;
 
 	@GetMapping("/listarclientes")
 	public List<Cliente> getClientes() {
@@ -43,5 +48,10 @@ public class RESTController {
 	public List<Proyecto> getProyectos() {
 		return proyectoService.findAll();
 	}
+	
+	/*@GetMapping("/equipo") //página del equipo
+	public List<Equipo> getEquipo(){
+		return equipoService.findAll();
+	}*/
 
 }
