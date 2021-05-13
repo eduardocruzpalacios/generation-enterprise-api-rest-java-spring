@@ -20,6 +20,7 @@ public class ProyectoServiceImpl implements ProyectoService {
 	ProyectoRepository repo;
 
 	// Metodo para listar
+	@Override
 	public List<Proyecto> findAll() {
 		return repo.findAll();
 	}

@@ -22,21 +22,26 @@ import com.ejemplos.spring.service.ClienteService;
 import com.ejemplos.spring.service.ProyectoService;
 
 @RestController
-public class ProyectoController {
+public class RESTController {
 
 	@Autowired
 	private ClienteService clienteService;
 	@Autowired
 	private ProyectoService proyectoService;
 
-	@GetMapping("/listar")
+	@GetMapping("/listarclientes")
 	public List<Cliente> getClientes() {
 		return clienteService.findAll();
 	}
 
-	@PostMapping("/add") // localhost:5000/add
+	@PostMapping("/addproyecto") // localhost:5000/add
 	public void addProyecto(@RequestBody Proyecto proyecto) {
 		proyectoService.save(proyecto);
+	}
+
+	@GetMapping("/listarproyectos")
+	public List<Proyecto> getProyectos() {
+		return proyectoService.findAll();
 	}
 
 }
