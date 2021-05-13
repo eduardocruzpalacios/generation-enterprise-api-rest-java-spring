@@ -30,9 +30,11 @@ public class RESTController {
 	@Autowired
 	private ProyectoService proyectoService;
 	@Autowired
+	private PersonaCargoService personaCargoService;
+	/*@Autowired
 	private PersonaService personaService;
 	@Autowired
-	private CargoService cargoService;
+	private CargoService cargoService;*/
 
 	@GetMapping("/listarclientes")
 	public List<Cliente> getClientes() {
@@ -50,8 +52,8 @@ public class RESTController {
 	}
 	
 	/*@GetMapping("/equipo") //página del equipo
-	public List<Equipo> getEquipo(){
-		return equipoService.findAll();
+	public getEquipo(){
+		return personaCargoService.listarPersonaCargo();
 	}*/
 
 }
