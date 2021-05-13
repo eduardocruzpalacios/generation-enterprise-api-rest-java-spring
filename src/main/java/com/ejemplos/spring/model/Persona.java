@@ -15,13 +15,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "equipo")
-public class Equipo {
+public class Persona {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -39,11 +38,11 @@ public class Equipo {
 	@JoinColumn(name = "cargo")
 	private Cargo cargo;
 
-	public Equipo() {
+	public Persona() {
 		super();
 	}
 
-	public Equipo(int idpersona, String nombre, String apellidos, String resumen, String foto, Cargo cargo) {
+	public Persona(int idpersona, String nombre, String apellidos, String resumen, String foto, Cargo cargo) {
 		super();
 		this.idpersona = idpersona;
 		this.nombre = nombre;
