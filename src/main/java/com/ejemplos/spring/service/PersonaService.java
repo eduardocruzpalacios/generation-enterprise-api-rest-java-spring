@@ -1,5 +1,13 @@
 /*
- * 13 mayo 2021
+
+*Fecha: 13/05/2021
+
+*@Author NextoMarket
+
+*@Version 1.0
+
+*
+
  */
 package com.ejemplos.spring.service;
 
@@ -11,7 +19,7 @@ public interface PersonaService {
 
 	// metodo para listar personas
 	public List<Persona> findAll();
-	
+
 	// Metodo para guardar una nueva persona
 	public Persona save(Persona p);
 
