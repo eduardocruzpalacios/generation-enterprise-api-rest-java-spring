@@ -1,9 +1,14 @@
 /*
- * class ClienteRest
- * 11/05/2021
- * v 1.0
- * @Miguel
- */
+
+*Fecha: 13/05/2021
+
+*@Author NextoMarket
+
+*@Version 1.0
+
+*
+
+*/
 
 package com.ejemplos.spring.controller;
 
@@ -54,6 +59,11 @@ public class RESTController {
 	@GetMapping("/equipo") // página del equipo
 	public List<Persona> getEquipo() {
 		return personaService.findAll();
+	}
+
+	@PostMapping("/addpersona") // crear nueva persona que forma aprte del equipo
+	public void addPersona(@RequestBody Persona persona) {
+		personaService.save(persona);
 	}
 
 }
