@@ -14,6 +14,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import com.ejemplos.spring.model.Cliente;
 import com.ejemplos.spring.model.Proyecto;
 import com.ejemplos.spring.service.ProyectoServiceImpl;
 
@@ -24,11 +25,13 @@ public class Test_findAll_service_proyecto {
 	@Autowired
 	private ProyectoServiceImpl proyectoServiceImpl;
 	
-	public List<Proyecto> findAll() {
-		List<Proyecto> listaProyectos = new ArrayList<Proyecto>();
-		//listaProyectos.add(new Proyecto(1, "movieflix", "15/03/2021", "CRUD", "aplicación de gestion de películas", "/src/main/resources/static/img/movieflix.jpg", 1));
-		return listaProyectos;
-	}
+	//public List<Proyecto> findAll() {
+		//Cliente c = new Cliente(1, "Pedro", "Barrantes", "img/zizou entrenador.jpg");
+
+		//List<Proyecto> listaProyectos = new ArrayList<Proyecto>();
+		//listaProyectos.add(new Proyecto(1, "movieflix", "15/03/2021", "CRUD", "aplicación de gestion de películas", "/src/main/resources/static/img/movieflix.jpg", c));
+		//return listaProyectos;
+	//}
 	
 	@Test
 	void existe() {
