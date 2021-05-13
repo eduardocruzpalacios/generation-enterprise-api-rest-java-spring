@@ -24,7 +24,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.ejemplos.spring.model.Cliente;
 import com.ejemplos.spring.model.Persona;
 import com.ejemplos.spring.model.Proyecto;
-import com.ejemplos.spring.service.CargoService;
 import com.ejemplos.spring.service.ClienteService;
 import com.ejemplos.spring.service.PersonaService;
 import com.ejemplos.spring.service.ProyectoService;
@@ -38,8 +37,6 @@ public class RESTController {
 	private ProyectoService proyectoService;
 	@Autowired
 	private PersonaService personaService;
-	@Autowired
-	private CargoService cargoService;
 
 	@GetMapping("/listarclientes")
 	public List<Cliente> getClientes() {

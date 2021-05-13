@@ -1,9 +1,14 @@
 /*
- * class Proyecto
- * 11/05/2021
- * v 1.0
- * @Miguel
- */
+
+*13/05/2021
+
+*@Author NextoMarket
+
+*@Version 1.0
+
+*
+
+*/
 
 package com.ejemplos.spring.model;
 
