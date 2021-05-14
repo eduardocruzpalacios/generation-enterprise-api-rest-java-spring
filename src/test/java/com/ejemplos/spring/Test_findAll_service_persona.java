@@ -6,17 +6,14 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.ejemplos.spring.service.ClienteService;
-import com.ejemplos.spring.service.ClienteServiceImpl;
-
-
+import com.ejemplos.spring.service.PersonaService;
+import com.ejemplos.spring.service.PersonaServiceImpl;
 @SpringBootTest
-public class Test_findAll_service_cliente {
-	
+public class Test_findAll_service_persona {
 
 	@Autowired
-	private ClienteService service;
-
+	private PersonaService service;
+	
 	@Test // comprobamos si service contiene algo
 	void interfazContieneCosas() {
 		assertThat(service).isNotNull();
@@ -32,25 +29,24 @@ public class Test_findAll_service_cliente {
 		assertThat(service.findAll()).isNotNull();
 	}
 	
-	//Ahora con la clase que implementa el método
+	//Ahora con la clase que implementa la interfaz
 	
 	@Autowired
-	private ClienteServiceImpl clienteServiceImpl;
+	private PersonaServiceImpl serviceImpl;
 	
 	@Test // comprobamos si service contiene algo
 	void claseContieneCosas() {
-		assertThat(clienteServiceImpl).isNotNull();
+		assertThat(serviceImpl).isNotNull();
 	}
 	
 	@Test // comprobamos si el método finfAll() no devuelve nada
 	void claseNoDevuelveNada() {
-		assertThat(clienteServiceImpl.findAll()).isNull();
+		assertThat(serviceImpl.findAll()).isNull();
 	}
 	
 	@Test // comprobamos si el método finfAll() nos devuelve algo
 	void claseDevuelveCosas() {
-		assertThat(clienteServiceImpl.findAll()).isNotNull();
+		assertThat(serviceImpl.findAll()).isNotNull();
 	}
-		
 	
 }
