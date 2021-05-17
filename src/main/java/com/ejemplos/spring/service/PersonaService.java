@@ -25,4 +25,7 @@ public interface PersonaService {
 
 	// metodo para llamar un objeto (para luego modificarlo)
 	public List<Persona> findById(int idpersona);
+
+	// metodo para borrar un objeto por id
+	public void deleteById(Integer idproyecto);
 }
