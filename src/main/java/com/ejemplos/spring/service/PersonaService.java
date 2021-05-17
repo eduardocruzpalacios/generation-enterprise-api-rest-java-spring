@@ -23,4 +23,6 @@ public interface PersonaService {
 	// Metodo para guardar una nueva persona
 	public Persona save(Persona p);
 
+	// metodo para llamar un objeto (para luego modificarlo)
+	public List<Persona> findById(int idpersona);
 }

@@ -36,4 +36,11 @@ public class PersonaServiceImpl implements PersonaService {
 	public Persona save(Persona p) {
 		return repo.save(p);
 	}
+
+	// metodo para llamar un objeto (para luego modificarlo)
+	@Override
+	public List<Persona> findById(int idpersona) {
+		return repo.findById(idpersona);
+	}
+
 }

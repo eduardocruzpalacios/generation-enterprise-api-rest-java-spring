@@ -20,4 +20,7 @@ public interface CargoService {
 	// metodo para listar cargos
 	public List<Cargo> findAll();
 
+	// metodo para llamar un objeto (para luego modificarlo)
+	public List<Cargo> findById(int idcargo);
+
 }

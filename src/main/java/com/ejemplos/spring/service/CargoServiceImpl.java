@@ -1,6 +1,6 @@
 /*
 
-*Fecha: 13/05/2021
+ *Fecha: 13/05/2021
 
 *@Author NextoMarket
 
@@ -28,6 +28,12 @@ public class CargoServiceImpl implements CargoService {
 	// metodo para listar cargos
 	public List<Cargo> findAll() {
 		return repo.findAll();
+	}
+
+	// metodo para llamar un objeto (para luego modificarlo)
+	@Override
+	public List<Cargo> findById(int idcargo) {
+		return repo.findById(idcargo);
 	}
 
 }
