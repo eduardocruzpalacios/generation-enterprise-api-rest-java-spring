@@ -37,8 +37,8 @@ public class RESTController {
 	/*
 	 * PROYECTOS
 	 */
-	
-	@GetMapping("/listarproyectos") //listar proyectos
+
+	@GetMapping("/listarproyectos") // listar proyectos
 	public List<Proyecto> getProyectos() {
 		return proyectoService.findAll();
 	}
@@ -48,16 +48,16 @@ public class RESTController {
 		proyectoService.save(proyecto);
 	}
 
-	@DeleteMapping("/eliminarproyecto/{idproyecto}") //eliminar proyectos
-	public void eliminarProyecto(@PathVariable("idproyecto")Integer idproyecto) {
+	@DeleteMapping("/eliminarproyecto/{idproyecto}") // eliminar proyectos
+	public void eliminarProyecto(@PathVariable("idproyecto") Integer idproyecto) {
 		proyectoService.deleteById(idproyecto);
 	}
-	
+
 	@PutMapping("/editarproyecto")
 	public void editarProyecto(@RequestBody Proyecto p) {
 		proyectoService.save(p);
 	}
-	
+
 	/*
 	 * EQUIPO
 	 */
@@ -71,15 +71,15 @@ public class RESTController {
 	public void addPersona(@RequestBody Persona persona) {
 		personaService.save(persona);
 	}
-	
-	@DeleteMapping("/eliminarpersona/{idpersona}") //eliminar persona
-	public void eliminarPersona(@PathVariable("idpersona")Integer idpersona) {
+
+	@DeleteMapping("/eliminarpersona/{idpersona}") // eliminar persona
+	public void eliminarPersona(@PathVariable("idpersona") Integer idpersona) {
 		proyectoService.deleteById(idpersona);
 	}
-	
-	@PutMapping("/editarequipo") //modificar datos persona del equipo
+
+	@PutMapping("/editarequipo") // modificar datos persona del equipo
 	public void editarPersona(@RequestBody Persona p) {
 		personaService.save(p);
 	}
-	
+
 }

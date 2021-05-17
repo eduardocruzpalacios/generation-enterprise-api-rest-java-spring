@@ -20,7 +20,7 @@ import javax.persistence.Table;
 public class Cliente {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idcliente;
 
 	private String nombre;

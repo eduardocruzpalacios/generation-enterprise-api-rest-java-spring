@@ -23,7 +23,7 @@ public interface ProyectoService {
 
 	// metodo para llamar un objeto (para luego modificarlo)
 	public List<Proyecto> findById(int idproyecto);
-	
+
 	// metodo para borrar un objeto por id
 	public void deleteById(Integer idproyecto);
 }
