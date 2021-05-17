@@ -6,10 +6,7 @@
 
 *@Version 1.0
 
-*
-
 */
-
 package com.ejemplos.spring.repository;
 
 import java.util.List;

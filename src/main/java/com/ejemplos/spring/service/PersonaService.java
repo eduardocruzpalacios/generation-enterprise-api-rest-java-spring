@@ -6,9 +6,7 @@
 
 *@Version 1.0
 
-*
-
- */
+*/
 package com.ejemplos.spring.service;
 
 import java.util.List;

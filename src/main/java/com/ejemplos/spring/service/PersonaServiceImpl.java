@@ -6,8 +6,6 @@
 
 *@Version 1.0
 
-*
-
 */
 package com.ejemplos.spring.service;
 

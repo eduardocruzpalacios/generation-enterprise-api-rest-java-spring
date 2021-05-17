@@ -1,13 +1,12 @@
 /*
 
+*Fecha: 13/05/2021
+
 *@Author NextoMarket
 
 *@Version 1.0
 
-*13/05/2021
-
 */
-
 package com.ejemplos.spring.model;
 
 import javax.persistence.Entity;
