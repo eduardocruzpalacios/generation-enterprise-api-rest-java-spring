@@ -15,8 +15,9 @@ package com.ejemplos.spring.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -52,6 +53,11 @@ public class RESTController {
 	public List<Proyecto> getProyectos() {
 		return proyectoService.findAll();
 	}
+	
+	@DeleteMapping("/eliminarproyecto/{id}")
+	public void eliminarProyecto(@PathVariable("id")Integer id) {
+		proyectoService.deleteById(id);
+	}
 
 	@GetMapping("/equipo") // página del equipo
 	public List<Persona> getEquipo() {
@@ -62,5 +68,7 @@ public class RESTController {
 	public void addPersona(@RequestBody Persona persona) {
 		personaService.save(persona);
 	}
+	
+	
 
 }
