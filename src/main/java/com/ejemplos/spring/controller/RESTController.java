@@ -40,9 +40,15 @@ public class RESTController {
 	@Autowired
 	private PersonaService personaService;
 
-	@GetMapping("/listarclientes") //lisar clientes
-	public List<Cliente> getClientes() {
-		return clienteService.findAll();
+
+	
+	/*
+	 * PROYECTOS
+	 */
+	
+	@GetMapping("/listarproyectos") //listar proyectos
+	public List<Proyecto> getProyectos() {
+		return proyectoService.findAll();
 	}
 
 	@PostMapping("/addproyecto") // localhost:5000/add
@@ -50,11 +56,6 @@ public class RESTController {
 		proyectoService.save(proyecto);
 	}
 
-	@GetMapping("/listarproyectos") //listar proyectos
-	public List<Proyecto> getProyectos() {
-		return proyectoService.findAll();
-	}
-	
 	@DeleteMapping("/eliminarproyecto/{idproyecto}") //eliminar proyectos
 	public void eliminarProyecto(@PathVariable("idproyecto")Integer idproyecto) {
 		proyectoService.deleteById(idproyecto);
@@ -64,6 +65,15 @@ public class RESTController {
 	public void editarProyecto(@RequestBody Proyecto p) {
 		proyectoService.save(p);
 	}
+	
+	@GetMapping("/listarclientes") //listar clientes
+	public List<Cliente> getClientes() {
+		return clienteService.findAll();
+	}
+	
+	/*
+	 * EQUIPO
+	 */
 
 	@GetMapping("/equipo") // página del equipo
 	public List<Persona> getEquipo() {
@@ -75,6 +85,9 @@ public class RESTController {
 		personaService.save(persona);
 	}
 	
+	@PutMapping("/editarequipo") //modificar datos persona del equipo
+	public void editarPersona(@RequestBody Persona p) {
+		personaService.save(p);
+	}
 	
-
 }
