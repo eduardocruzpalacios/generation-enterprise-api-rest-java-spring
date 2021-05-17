@@ -21,4 +21,7 @@ public interface ClienteService {
 	// metodo para listar clientes
 	public List<Cliente> findAll();
 
+	// metodo para llamar un objeto (para luego modificarlo)
+	public List<Cliente> findById(int idcliente);
+
 }

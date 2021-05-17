@@ -24,4 +24,6 @@ public interface ProyectoService {
 	// Metodo para guardar un nuevo proyecto
 	public Proyecto save(Proyecto p);
 
+	// metodo para llamar un objeto (para luego modificarlo)
+	public List<Proyecto> findById(int idproyecto);
 }
