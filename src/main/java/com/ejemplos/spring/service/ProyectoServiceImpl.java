@@ -44,4 +44,9 @@ public class ProyectoServiceImpl implements ProyectoService {
 		return repo.findById(idproyecto);
 	}
 
+	@Override
+	public void deleteById(Integer idproyecto) {
+		repo.deleteById(idproyecto);
+	}
+
 }

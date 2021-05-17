@@ -54,8 +54,8 @@ public class RESTController {
 		return proyectoService.findAll();
 	}
 	
-	@DeleteMapping("/eliminarproyecto/{id}") //eliminar proyectos
-	public void eliminarProyecto(@PathVariable("id")Integer idproyecto) {
+	@DeleteMapping("/eliminarproyecto/{idproyecto}") //eliminar proyectos
+	public void eliminarProyecto(@PathVariable("idproyecto")Integer idproyecto) {
 		proyectoService.deleteById(idproyecto);
 	}
 	
