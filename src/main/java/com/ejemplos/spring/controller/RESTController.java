@@ -23,10 +23,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ejemplos.spring.model.Cliente;
 import com.ejemplos.spring.model.Persona;
 import com.ejemplos.spring.model.Proyecto;
-import com.ejemplos.spring.service.ClienteService;
+
 import com.ejemplos.spring.service.PersonaService;
 import com.ejemplos.spring.service.ProyectoService;
 
@@ -34,14 +33,10 @@ import com.ejemplos.spring.service.ProyectoService;
 public class RESTController {
 
 	@Autowired
-	private ClienteService clienteService;
-	@Autowired
 	private ProyectoService proyectoService;
 	@Autowired
 	private PersonaService personaService;
 
-
-	
 	/*
 	 * PROYECTOS
 	 */
@@ -66,11 +61,6 @@ public class RESTController {
 		proyectoService.save(p);
 	}
 	
-	@GetMapping("/listarclientes") //listar clientes
-	public List<Cliente> getClientes() {
-		return clienteService.findAll();
-	}
-	
 	/*
 	 * EQUIPO
 	 */
@@ -83,6 +73,11 @@ public class RESTController {
 	@PostMapping("/addpersona") // crear nueva persona que forma aprte del equipo
 	public void addPersona(@RequestBody Persona persona) {
 		personaService.save(persona);
+	}
+	
+	@DeleteMapping("/eliminarpersona/{idpersona}") //eliminar persona
+	public void eliminarPersona(@PathVariable("idpersona")Integer idpersona) {
+		proyectoService.deleteById(idpersona);
 	}
 	
 	@PutMapping("/editarequipo") //modificar datos persona del equipo
