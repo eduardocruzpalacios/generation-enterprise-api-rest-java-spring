@@ -74,7 +74,7 @@ public class RESTController {
 
 	@DeleteMapping("/eliminarpersona/{idpersona}") // eliminar persona
 	public void eliminarPersona(@PathVariable("idpersona") Integer idpersona) {
-		proyectoService.deleteById(idpersona);
+		personaService.deleteById(idpersona);
 	}
 
 	@PutMapping("/editarequipo") // modificar datos persona del equipo
