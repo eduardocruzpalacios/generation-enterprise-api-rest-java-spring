@@ -31,8 +31,8 @@ public class PersonaServiceImpl implements PersonaService {
 
 	// metodo para guardar 1 persona
 	@Override
-	public Persona save(Persona p) {
-		return repo.save(p);
+	public Persona save(Persona persona) {
+		return repo.save(persona);
 	}
 
 	// metodo para llamar un objeto (para luego modificarlo)
