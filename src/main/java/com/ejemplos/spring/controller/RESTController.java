@@ -54,8 +54,8 @@ public class RESTController {
 	}
 
 	@PutMapping("/editarproyecto")
-	public void editarProyecto(@RequestBody Proyecto p) {
-		proyectoService.save(p);
+	public void editarProyecto(@RequestBody Proyecto proyecto) {
+		proyectoService.save(proyecto);
 	}
 
 	/*
@@ -78,8 +78,9 @@ public class RESTController {
 	}
 
 	@PutMapping("/editarequipo") // modificar datos persona del equipo
-	public void editarPersona(@RequestBody Persona p) {
-		personaService.save(p);
+	public void editarPersona(@RequestBody Persona persona) {
+		personaService.save(persona);
+		
 	}
 
 }

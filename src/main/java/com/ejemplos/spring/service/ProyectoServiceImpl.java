@@ -31,8 +31,8 @@ public class ProyectoServiceImpl implements ProyectoService {
 
 	// método para guardar
 	@Override
-	public Proyecto save(Proyecto p) {
-		return repo.save(p);
+	public Proyecto save(Proyecto proyecto) {
+		return repo.save(proyecto);
 	}
 
 	// metodo para llamar un objeto (para luego modificarlo)
