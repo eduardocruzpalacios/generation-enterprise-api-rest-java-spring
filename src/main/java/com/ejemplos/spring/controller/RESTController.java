@@ -58,7 +58,7 @@ public class RESTController {
 		return proyectoService.findById(idproyecto);
 	}
 	
-	@PutMapping("/updateProyecto/{idproyecto}")
+	@PutMapping("/updateproyecto/{idproyecto}")
 	public void updateProyecto(@RequestBody Proyecto proyecto) {
 		proyectoService.save(proyecto);
 	}
