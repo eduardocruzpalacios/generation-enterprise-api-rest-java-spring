@@ -40,11 +40,12 @@ public class PersonaServiceImpl implements PersonaService {
 	public List<Persona> findById(int idpersona) {
 		return repo.findById(idpersona);
 	}
+	
 
 	// metodo para borrar un objeto por id
 	@Override
-	public void deleteById(Integer idproyecto) {
-		repo.deleteById(idproyecto);
+	public void deleteById(Integer idpersona) {
+		repo.deleteById(idpersona);
 	}
 
 }

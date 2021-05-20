@@ -53,8 +53,13 @@ public class RESTController {
 		proyectoService.deleteById(idproyecto);
 	}
 
-	@PutMapping("/editarproyecto")
-	public void editarProyecto(@RequestBody Proyecto proyecto) {
+	@GetMapping("/localizarproyecto/{idproyecto}")
+	public List<Proyecto> localizarProyecto(@PathVariable Integer idproyecto) {
+		return proyectoService.findById(idproyecto);
+	}
+	
+	@PutMapping("/updateProyecto/{idproyecto}")
+	public void updateProyecto(@RequestBody Proyecto proyecto) {
 		proyectoService.save(proyecto);
 	}
 
@@ -77,10 +82,14 @@ public class RESTController {
 		personaService.deleteById(idpersona);
 	}
 
-	@PutMapping("/editarequipo") // modificar datos persona del equipo
-	public void editarPersona(@RequestBody Persona persona) {
+	@GetMapping("/localizarpersona/{idpersona}")
+	public List<Persona> localizarPersona(@PathVariable Integer idpersona) {
+		return personaService.findById(idpersona);
+	}
+	
+	@PutMapping("/updatePersona/{idpersona}")
+	public void updatePersona(@RequestBody Persona persona) {
 		personaService.save(persona);
-		
 	}
 
 }
