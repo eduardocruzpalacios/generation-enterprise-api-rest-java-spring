@@ -19,6 +19,6 @@ import com.ejemplos.spring.model.Cargo;
 @Repository
 public interface CargoRepository extends JpaRepository<Cargo, Integer> {
 
-	// metodo para llamar un objeto (para luego modificarlo)
 	public List<Cargo> findById(int idcargo);
+	
 }

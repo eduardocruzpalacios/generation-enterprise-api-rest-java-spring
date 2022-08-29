@@ -19,6 +19,6 @@ import com.ejemplos.spring.model.Cliente;
 @Repository
 public interface ClienteRepository extends JpaRepository<Cliente, Integer> {
 
-	// metodo para llamar un objeto (para luego modificarlo)
 	public List<Cliente> findById(int idcliente);
+
 }

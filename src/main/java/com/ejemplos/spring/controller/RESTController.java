@@ -22,7 +22,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.ejemplos.spring.model.Persona;
 import com.ejemplos.spring.model.Proyecto;
-
 import com.ejemplos.spring.service.PersonaService;
 import com.ejemplos.spring.service.ProyectoService;
 
@@ -34,21 +33,17 @@ public class RESTController {
 	@Autowired
 	private PersonaService personaService;
 
-	/*
-	 * PROYECTOS
-	 */
-
-	@GetMapping("/listarproyectos") // listar proyectos
+	@GetMapping("/listarproyectos")
 	public List<Proyecto> getProyectos() {
 		return proyectoService.findAll();
 	}
 
-	@PostMapping("/addproyecto") // localhost:5000/add
+	@PostMapping("/addproyecto")
 	public void addProyecto(@RequestBody Proyecto proyecto) {
 		proyectoService.save(proyecto);
 	}
 
-	@DeleteMapping("/eliminarproyecto/{idproyecto}") // eliminar proyectos
+	@DeleteMapping("/eliminarproyecto/{idproyecto}")
 	public void eliminarProyecto(@PathVariable("idproyecto") Integer idproyecto) {
 		proyectoService.deleteById(idproyecto);
 	}
@@ -57,27 +52,23 @@ public class RESTController {
 	public List<Proyecto> localizarProyecto(@PathVariable Integer idproyecto) {
 		return proyectoService.findById(idproyecto);
 	}
-	
+
 	@PutMapping("/updateproyecto/{idproyecto}")
 	public void updateProyecto(@RequestBody Proyecto proyecto) {
 		proyectoService.save(proyecto);
 	}
 
-	/*
-	 * EQUIPO
-	 */
-
-	@GetMapping("/equipo") // página del equipo
+	@GetMapping("/equipo")
 	public List<Persona> getEquipo() {
 		return personaService.findAll();
 	}
 
-	@PostMapping("/addpersona") // crear nueva persona que forma aprte del equipo
+	@PostMapping("/addpersona")
 	public void addPersona(@RequestBody Persona persona) {
 		personaService.save(persona);
 	}
 
-	@DeleteMapping("/eliminarpersona/{idpersona}") // eliminar persona
+	@DeleteMapping("/eliminarpersona/{idpersona}")
 	public void eliminarPersona(@PathVariable("idpersona") Integer idpersona) {
 		personaService.deleteById(idpersona);
 	}
@@ -86,7 +77,7 @@ public class RESTController {
 	public List<Persona> localizarPersona(@PathVariable Integer idpersona) {
 		return personaService.findById(idpersona);
 	}
-	
+
 	@PutMapping("/updatePersona/{idpersona}")
 	public void updatePersona(@RequestBody Persona persona) {
 		personaService.save(persona);

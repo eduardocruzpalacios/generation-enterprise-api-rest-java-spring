@@ -19,6 +19,6 @@ import com.ejemplos.spring.model.Persona;
 @Repository
 public interface PersonaRepository extends JpaRepository<Persona, Integer> {
 
-	// metodo para llamar un objeto (para luego modificarlo)
 	public List<Persona> findById(int idpersona);
+
 }

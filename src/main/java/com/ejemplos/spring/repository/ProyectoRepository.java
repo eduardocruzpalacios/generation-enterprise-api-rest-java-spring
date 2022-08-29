@@ -19,6 +19,6 @@ import com.ejemplos.spring.model.Proyecto;
 @Repository
 public interface ProyectoRepository extends JpaRepository<Proyecto, Integer> {
 
-	// metodo para llamar un objeto (para luego modificarlo)
 	public List<Proyecto> findById(int idproyecto);
+
 }

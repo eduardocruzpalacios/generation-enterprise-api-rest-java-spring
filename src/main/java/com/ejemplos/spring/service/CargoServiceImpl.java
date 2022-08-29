@@ -23,12 +23,11 @@ public class CargoServiceImpl implements CargoService {
 	@Autowired
 	CargoRepository repo;
 
-	// metodo para listar cargos
+	@Override
 	public List<Cargo> findAll() {
 		return repo.findAll();
 	}
 
-	// metodo para llamar un objeto (para luego modificarlo)
 	@Override
 	public List<Cargo> findById(int idcargo) {
 		return repo.findById(idcargo);

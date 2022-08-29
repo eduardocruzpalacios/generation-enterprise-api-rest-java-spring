@@ -17,7 +17,6 @@ public class GenerationEnterpriseRestApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(GenerationEnterpriseRestApplication.class, args);
-
 	}
 
 }

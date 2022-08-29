@@ -15,15 +15,12 @@ import com.ejemplos.spring.model.Proyecto;
 
 public interface ProyectoService {
 
-	// Metodo para listar proyectos
 	public List<Proyecto> findAll();
 
-	// Metodo para guardar un nuevo proyecto
 	public Proyecto save(Proyecto proyecto);
 
-	// metodo para llamar un objeto (para luego modificarlo)
 	public List<Proyecto> findById(int idproyecto);
 
-	// metodo para borrar un objeto por id
 	public void deleteById(Integer idproyecto);
+
 }
