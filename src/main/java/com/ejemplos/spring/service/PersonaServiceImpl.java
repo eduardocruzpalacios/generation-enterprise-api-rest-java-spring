@@ -34,11 +34,6 @@ public class PersonaServiceImpl implements PersonaService {
 	}
 
 	@Override
-	public List<Persona> findById(int idpersona) {
-		return repo.findById(idpersona);
-	}
-
-	@Override
 	public void deleteById(Integer idpersona) {
 		repo.deleteById(idpersona);
 	}

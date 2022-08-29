@@ -19,8 +19,6 @@ public interface PersonaService {
 
 	public Persona save(Persona persona);
 
-	public List<Persona> findById(int idpersona);
-
 	public void deleteById(Integer idpersona);
 
 }

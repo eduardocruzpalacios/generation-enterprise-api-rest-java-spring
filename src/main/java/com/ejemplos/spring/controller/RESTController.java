@@ -73,11 +73,6 @@ public class RESTController {
 		personaService.deleteById(idpersona);
 	}
 
-	@GetMapping("/localizarpersona/{idpersona}")
-	public List<Persona> localizarPersona(@PathVariable Integer idpersona) {
-		return personaService.findById(idpersona);
-	}
-
 	@PutMapping("/updatePersona/{idpersona}")
 	public void updatePersona(@RequestBody Persona persona) {
 		personaService.save(persona);
