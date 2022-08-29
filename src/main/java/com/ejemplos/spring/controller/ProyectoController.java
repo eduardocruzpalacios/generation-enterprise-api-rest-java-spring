@@ -1,0 +1,57 @@
+/*
+
+*Fecha: 13/05/2021
+
+*@Author NextoMarket
+
+*@Version 1.0
+
+*/
+package com.ejemplos.spring.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ejemplos.spring.model.Proyecto;
+import com.ejemplos.spring.service.ProyectoService;
+
+@RestController
+public class ProyectoController {
+
+	@Autowired
+	private ProyectoService proyectoService;
+
+	@PostMapping("/proyectos/create")
+	public void create(@RequestBody Proyecto proyecto) {
+		proyectoService.save(proyecto);
+	}
+
+	@GetMapping("/proyectos")
+	public List<Proyecto> readAll() {
+		return proyectoService.findAll();
+	}
+
+	@GetMapping("/proyectos/{id}")
+	public List<Proyecto> readById(@PathVariable Integer id) {
+		return proyectoService.findById(id);
+	}
+
+	@PutMapping("/proyectos/{id}/update")
+	public void update(@RequestBody Proyecto proyecto) {
+		proyectoService.save(proyecto);
+	}
+
+	@DeleteMapping("/proyectos/{id}/delete")
+	public void delete(@PathVariable Integer id) {
+		proyectoService.deleteById(id);
+	}
+
+}

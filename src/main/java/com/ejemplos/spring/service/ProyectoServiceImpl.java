@@ -21,26 +21,26 @@ import com.ejemplos.spring.repository.ProyectoRepository;
 public class ProyectoServiceImpl implements ProyectoService {
 
 	@Autowired
-	ProyectoRepository repo;
+	ProyectoRepository proyectoRepository;
 
 	@Override
 	public List<Proyecto> findAll() {
-		return repo.findAll();
+		return proyectoRepository.findAll();
+	}
+
+	@Override
+	public List<Proyecto> findById(int id) {
+		return proyectoRepository.findById(id);
 	}
 
 	@Override
 	public Proyecto save(Proyecto proyecto) {
-		return repo.save(proyecto);
+		return proyectoRepository.save(proyecto);
 	}
 
 	@Override
-	public List<Proyecto> findById(int idproyecto) {
-		return repo.findById(idproyecto);
-	}
-
-	@Override
-	public void deleteById(Integer idproyecto) {
-		repo.deleteById(idproyecto);
+	public void deleteById(Integer id) {
+		proyectoRepository.deleteById(id);
 	}
 
 }

@@ -21,21 +21,21 @@ import com.ejemplos.spring.repository.PersonaRepository;
 public class PersonaServiceImpl implements PersonaService {
 
 	@Autowired
-	PersonaRepository repo;
+	PersonaRepository personaRepository;
 
 	@Override
 	public List<Persona> findAll() {
-		return repo.findAll();
+		return personaRepository.findAll();
 	}
 
 	@Override
 	public Persona save(Persona persona) {
-		return repo.save(persona);
+		return personaRepository.save(persona);
 	}
 
 	@Override
-	public void deleteById(Integer idpersona) {
-		repo.deleteById(idpersona);
+	public void deleteById(Integer id) {
+		personaRepository.deleteById(id);
 	}
 
 }

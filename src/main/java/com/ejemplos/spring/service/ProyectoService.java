@@ -17,10 +17,10 @@ public interface ProyectoService {
 
 	public List<Proyecto> findAll();
 
+	public List<Proyecto> findById(int id);
+
 	public Proyecto save(Proyecto proyecto);
 
-	public List<Proyecto> findById(int idproyecto);
-
-	public void deleteById(Integer idproyecto);
+	public void deleteById(Integer id);
 
 }

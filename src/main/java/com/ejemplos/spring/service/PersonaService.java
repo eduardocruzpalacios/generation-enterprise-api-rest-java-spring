@@ -19,6 +19,6 @@ public interface PersonaService {
 
 	public Persona save(Persona persona);
 
-	public void deleteById(Integer idpersona);
+	public void deleteById(Integer id);
 
 }
