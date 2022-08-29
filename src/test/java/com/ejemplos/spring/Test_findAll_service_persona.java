@@ -17,45 +17,44 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import com.ejemplos.spring.service.PersonaService;
 import com.ejemplos.spring.service.PersonaServiceImpl;
+
 @SpringBootTest
 public class Test_findAll_service_persona {
 
 	@Autowired
 	private PersonaService service;
-	
-	@Test // comprobamos si service contiene algo
+
+	@Test
 	void interfazContieneCosas() {
 		assertThat(service).isNotNull();
 	}
-	
-	@Test // comprobamos si el método finfAll() no devuelve nada
+
+	@Test
 	void interfazNoDevuelveNada() {
 		assertThat(service.findAll()).isNull();
 	}
-	
-	@Test // comprobamos si el método finfAll() nos devuelve algo
+
+	@Test
 	void interfazDevuelveCosas() {
 		assertThat(service.findAll()).isNotNull();
 	}
-	
-	//Ahora con la clase que implementa la interfaz
-	
+
 	@Autowired
 	private PersonaServiceImpl serviceImpl;
-	
-	@Test // comprobamos si service contiene algo
+
+	@Test
 	void claseContieneCosas() {
 		assertThat(serviceImpl).isNotNull();
 	}
-	
-	@Test // comprobamos si el método finfAll() no devuelve nada
+
+	@Test
 	void claseNoDevuelveNada() {
 		assertThat(serviceImpl.findAll()).isNull();
 	}
-	
-	@Test // comprobamos si el método finfAll() nos devuelve algo
+
+	@Test
 	void claseDevuelveCosas() {
 		assertThat(serviceImpl.findAll()).isNotNull();
 	}
-	
+
 }

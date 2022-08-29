@@ -20,15 +20,15 @@ import com.ejemplos.spring.model.Persona;
 public class Test_persona {
 
 	Persona p = new Persona();
-	
-	@Test // comprobamos si el objeto contiene ALGO
+
+	@Test
 	void objetoContieneCosas() {
 		assertThat(p).isNotNull();
 	}
-	
-	@Test // comprobamos si el objeto NO contiene NADA
+
+	@Test
 	void objetoNoContieneCosas() {
 		assertThat(p).isNull();
 	}
-	
+
 }

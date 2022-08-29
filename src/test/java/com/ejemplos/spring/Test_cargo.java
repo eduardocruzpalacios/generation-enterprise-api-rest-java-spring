@@ -19,13 +19,14 @@ public class Test_cargo {
 
 	Cargo c = new Cargo();
 
-	@Test // comprobamos si el objeto contiene ALGO
+	@Test
 	void objetoContieneCosas() {
 		assertThat(c).isNotNull();
 	}
 
-	@Test // comprobamos si el objeto NO contiene NADA
+	@Test
 	void objetoNoContieneCosas() {
 		assertThat(c).isNull();
 	}
+
 }
