@@ -19,7 +19,5 @@ SQL statements to create the database and table along with CRUD queries are prov
 The connection is made via Hibernate (JPA) and SpringData JPA.
 ## Testing
 HTTP tests written on Postman are included as importable file.
-
-Classes are tested with JUnit5 & Mockito.
 ## API Documentation
 Swagger
