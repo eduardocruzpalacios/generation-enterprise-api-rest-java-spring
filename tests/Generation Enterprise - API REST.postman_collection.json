@@ -1,0 +1,245 @@
+{
+	"info": {
+		"_postman_id": "09c88397-ea6a-4af2-a051-f478021d5a55",
+		"name": "Generation Enterprise - API REST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "personas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/personas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"personas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "personas/:id/update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"idpersona\": 6,\r\n        \"nombre\": \"update test\",\r\n        \"apellidos\": \"UP\",\r\n        \"resumen\": \"entry changed just to test\",\r\n        \"foto\": \"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/User_font_awesome.svg/2048px-User_font_awesome.svg.png\",\r\n        \"cargo\": {\r\n            \"idcargo\": 6,\r\n            \"cargo\": \"BBDD dev\"\r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/personas/6/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"personas",
+						"6",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "personas/:id/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/personas/6/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"personas",
+						"6",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "personas/create Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"idpersona\": null,\r\n        \"nombre\": \"create test\",\r\n        \"apellidos\": \"CT\",\r\n        \"resumen\": \"entry created just to test\",\r\n        \"foto\": \"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/User_font_awesome.svg/2048px-User_font_awesome.svg.png\",\r\n        \"cargo\": {\r\n            \"idcargo\": 6,\r\n            \"cargo\": \"BBDD dev\"\r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/personas/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"personas",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "proyectos/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"idproyecto\": null,\r\n        \"proyecto\": \"entry created just to test\",\r\n        \"fechafin\": \"2022\",\r\n        \"resumen\": \"bla bla bla\",\r\n        \"descripcion\": \"Z\",\r\n        \"imagen\": \"https://res.cloudinary.com/da0kscqzj/image/upload/v1621502297/proyectos/movieflix_ftzby8.jpg\",\r\n        \"cliente\": {\r\n            \"idcliente\": 7,\r\n            \"nombre\": \"Nexto Market\",\r\n            \"descripcion\": \"Cool Spanish Dev Company\",\r\n            \"logo\": \"https://res.cloudinary.com/da0kscqzj/image/upload/v1621498549/clientes/nextomarket_zig1sa.png\"\r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/proyectos/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"proyectos",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "proyectos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/proyectos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"proyectos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "proyectos:id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/proyectos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"proyectos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "proyectos/:id/update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"idproyecto\": 11,\r\n        \"proyecto\": \"entry updated just to test\",\r\n        \"fechafin\": \"2022\",\r\n        \"resumen\": \"bla bla bla\",\r\n        \"descripcion\": \"Z\",\r\n        \"imagen\": \"https://res.cloudinary.com/da0kscqzj/image/upload/v1621502297/proyectos/movieflix_ftzby8.jpg\",\r\n        \"cliente\": {\r\n            \"idcliente\": 7,\r\n            \"nombre\": \"Nexto Market\",\r\n            \"descripcion\": \"Cool Spanish Dev Company\",\r\n            \"logo\": \"https://res.cloudinary.com/da0kscqzj/image/upload/v1621498549/clientes/nextomarket_zig1sa.png\"\r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/proyectos/11/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"proyectos",
+						"11",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "proyectos/:id/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/proyectos/10/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"proyectos",
+						"10",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
