@@ -20,5 +20,7 @@ MySQL database.
 SQL statements to create the database and table along with CRUD queries are provided.
 ## Testing
 HTTP tests written on Postman are included as importable file.
+
+API REST controller classes are tested with JUNIT and Mockito.
 ## API Documentation
 Swagger
