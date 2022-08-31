@@ -8,7 +8,7 @@
 
 */
 
-package generation.nextomarket.apirest.model;
+package generation.enterprise.apirest.model;
 
 import java.sql.Timestamp;
 

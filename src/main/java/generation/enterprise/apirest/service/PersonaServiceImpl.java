@@ -7,15 +7,15 @@
 *@Version 1.0
 
 */
-package generation.nextomarket.apirest.service;
+package generation.enterprise.apirest.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import generation.nextomarket.apirest.model.Persona;
-import generation.nextomarket.apirest.repository.PersonaRepository;
+import generation.enterprise.apirest.model.Persona;
+import generation.enterprise.apirest.repository.PersonaRepository;
 
 @Service
 public class PersonaServiceImpl implements PersonaService {

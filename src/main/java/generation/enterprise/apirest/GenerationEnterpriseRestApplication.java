@@ -7,7 +7,7 @@
 *@Version 1.0
 
 */
-package generation.nextomarket.apirest;
+package generation.enterprise.apirest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

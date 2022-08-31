@@ -7,11 +7,11 @@
 *@Version 1.0
 
 */
-package generation.nextomarket.apirest.service;
+package generation.enterprise.apirest.service;
 
 import java.util.List;
 
-import generation.nextomarket.apirest.model.Mensaje;
+import generation.enterprise.apirest.model.Mensaje;
 
 public interface MensajeService {
 

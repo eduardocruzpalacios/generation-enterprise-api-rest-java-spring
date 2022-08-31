@@ -7,12 +7,12 @@
 *@Version 1.0
 
 */
-package generation.nextomarket.apirest.repository;
+package generation.enterprise.apirest.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import generation.nextomarket.apirest.model.Mensaje;
+import generation.enterprise.apirest.model.Mensaje;
 
 @Repository
 public interface MensajeRepository extends JpaRepository<Mensaje, Integer> {

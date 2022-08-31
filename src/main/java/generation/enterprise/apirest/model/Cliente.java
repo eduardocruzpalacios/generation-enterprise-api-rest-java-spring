@@ -7,7 +7,7 @@
 *@Version 1.0
 
 */
-package generation.nextomarket.apirest.model;
+package generation.enterprise.apirest.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
