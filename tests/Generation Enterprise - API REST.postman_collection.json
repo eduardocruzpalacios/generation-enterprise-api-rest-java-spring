@@ -240,6 +240,77 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "mensajes/create",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"//pm.globals.set('now', new Date().getTime());\r",
+							"\r",
+							"const moment = require('moment');\r",
+							"pm.environment.set(\"now\", moment.utc().toJSON());\r",
+							"\r",
+							"pm.globals.set(\"currentDate\", new Date().toLocaleDateString());"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idmensaje\": null,\r\n    \"from\": \"test@ymail.ex\",\r\n    \"fecha\": \"2022-08-02T16:31:46.000+00:00\",\r\n    \"subject\": \"create test from postman\",\r\n    \"mensaje\": \"bla bla bla\",\r\n    \"respuesta\": \"wtf\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/mensajes/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"mensajes",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mensajes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/mensajes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"mensajes"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
