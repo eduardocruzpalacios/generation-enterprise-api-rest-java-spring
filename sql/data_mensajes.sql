@@ -1,5 +1,5 @@
 INSERT INTO
-  mensajes (
+  generation_enterprise_db.mensajes (
     idmensaje,
     `from`,
     fecha,
