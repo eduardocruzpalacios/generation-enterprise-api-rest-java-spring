@@ -16,7 +16,8 @@ public class SwaggerConfig {
 	@Bean
 	public Docket api() {
 		return new Docket(DocumentationType.SWAGGER_2).select()
-				.apis(RequestHandlerSelectors.basePackage("com.ejemplos.spring")).paths(PathSelectors.any()).build();
+				.apis(RequestHandlerSelectors.basePackage("generation.enterprise.apirest")).paths(PathSelectors.any())
+				.build();
 	}
 
 }

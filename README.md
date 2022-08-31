@@ -23,4 +23,6 @@ HTTP tests written on Postman are included as importable file.
 
 API REST controller classes are tested with JUNIT and Mockito.
 ## API Documentation
-Swagger
+Swagger:
+- [http://localhost:5000/v2/api-docs](http://localhost:5000/v2/api-docs)
+- [http://localhost:5000/swagger-ui/](http://localhost:5000/swagger-ui/)
