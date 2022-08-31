@@ -7,12 +7,12 @@
 *@Version 1.0
 
 */
-package com.ejemplos.spring.repository;
+package generation.nextomarket.apirest.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.ejemplos.spring.model.Persona;
+import generation.nextomarket.apirest.model.Persona;
 
 @Repository
 public interface PersonaRepository extends JpaRepository<Persona, Integer> {

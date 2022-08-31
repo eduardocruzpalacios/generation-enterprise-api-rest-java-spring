@@ -7,7 +7,7 @@
 *@Version 1.0
 
 */
-package com.ejemplos.spring.controller;
+package generation.nextomarket.apirest.controller;
 
 import java.util.List;
 
@@ -20,8 +20,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ejemplos.spring.model.Persona;
-import com.ejemplos.spring.service.PersonaService;
+import generation.nextomarket.apirest.model.Persona;
+import generation.nextomarket.apirest.service.PersonaService;
 
 @RestController
 public class PersonaController {

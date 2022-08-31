@@ -8,7 +8,7 @@
 
 */
 
-package com.ejemplos.spring.model;
+package generation.nextomarket.apirest.model;
 
 import java.sql.Timestamp;
 

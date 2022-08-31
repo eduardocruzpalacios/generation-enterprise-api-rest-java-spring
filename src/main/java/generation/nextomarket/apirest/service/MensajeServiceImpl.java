@@ -7,15 +7,15 @@
 *@Version 1.0
 
 */
-package com.ejemplos.spring.service;
+package generation.nextomarket.apirest.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.ejemplos.spring.model.Mensaje;
-import com.ejemplos.spring.repository.MensajeRepository;
+import generation.nextomarket.apirest.model.Mensaje;
+import generation.nextomarket.apirest.repository.MensajeRepository;
 
 @Service
 public class MensajeServiceImpl implements MensajeService {

@@ -7,7 +7,7 @@
 *@Version 1.0
 
 */
-package com.ejemplos.spring.controller;
+package generation.nextomarket.apirest.controller;
 
 import java.util.List;
 
@@ -20,8 +20,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ejemplos.spring.model.Proyecto;
-import com.ejemplos.spring.service.ProyectoService;
+import generation.nextomarket.apirest.model.Proyecto;
+import generation.nextomarket.apirest.service.ProyectoService;
 
 @RestController
 public class ProyectoController {

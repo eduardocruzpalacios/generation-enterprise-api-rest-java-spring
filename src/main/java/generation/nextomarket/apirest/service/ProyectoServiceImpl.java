@@ -7,15 +7,15 @@
 *@Version 1.0
 
 */
-package com.ejemplos.spring.service;
+package generation.nextomarket.apirest.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.ejemplos.spring.model.Proyecto;
-import com.ejemplos.spring.repository.ProyectoRepository;
+import generation.nextomarket.apirest.model.Proyecto;
+import generation.nextomarket.apirest.repository.ProyectoRepository;
 
 @Service
 public class ProyectoServiceImpl implements ProyectoService {

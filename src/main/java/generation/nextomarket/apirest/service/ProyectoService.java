@@ -7,11 +7,11 @@
 *@Version 1.0
 
 */
-package com.ejemplos.spring.service;
+package generation.nextomarket.apirest.service;
 
 import java.util.List;
 
-import com.ejemplos.spring.model.Proyecto;
+import generation.nextomarket.apirest.model.Proyecto;
 
 public interface ProyectoService {
 

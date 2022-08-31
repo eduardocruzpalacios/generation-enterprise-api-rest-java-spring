@@ -7,7 +7,7 @@
 *@Version 1.0
 
 */
-package com.ejemplos.spring.controller;
+package generation.nextomarket.apirest.controller;
 
 import java.util.List;
 
@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ejemplos.spring.model.Mensaje;
-import com.ejemplos.spring.service.MensajeService;
+import generation.nextomarket.apirest.model.Mensaje;
+import generation.nextomarket.apirest.service.MensajeService;
 
 @RestController
 public class MensajeController {

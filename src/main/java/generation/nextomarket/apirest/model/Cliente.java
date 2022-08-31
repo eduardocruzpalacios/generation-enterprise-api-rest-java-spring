@@ -7,7 +7,7 @@
 *@Version 1.0
 
 */
-package com.ejemplos.spring.model;
+package generation.nextomarket.apirest.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

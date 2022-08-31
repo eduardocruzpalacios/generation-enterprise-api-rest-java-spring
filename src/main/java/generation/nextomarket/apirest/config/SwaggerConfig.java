@@ -1,4 +1,4 @@
-package com.ejemplos.spring.config;
+package generation.nextomarket.apirest.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
