@@ -28,7 +28,6 @@ public class MensajeController {
 
 	@PostMapping("/mensajes/create")
 	public void create(@RequestBody Mensaje mensaje) {
-		System.out.println("OOOOOOOOOOOOOOOOOOO       OOO " + mensaje);
 		mensajeService.save(mensaje);
 	}
 

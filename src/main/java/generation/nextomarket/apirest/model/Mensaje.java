@@ -32,11 +32,9 @@ public class Mensaje {
 	private String respuesta;
 
 	public Mensaje() {
-		super();
 	}
 
 	public Mensaje(int idmensaje, String from, Timestamp fecha, String subject, String mensaje, String respuesta) {
-		super();
 		this.idmensaje = idmensaje;
 		this.from = from;
 		this.fecha = fecha;

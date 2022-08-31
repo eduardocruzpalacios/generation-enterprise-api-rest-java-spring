@@ -24,13 +24,9 @@ public class Persona {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idpersona;
-
 	private String nombre;
-
 	private String apellidos;
-
 	private String resumen;
-
 	private String foto;
 
 	@ManyToOne
@@ -38,11 +34,9 @@ public class Persona {
 	private Cargo cargo;
 
 	public Persona() {
-		super();
 	}
 
 	public Persona(int idpersona, String nombre, String apellidos, String resumen, String foto, Cargo cargo) {
-		super();
 		this.idpersona = idpersona;
 		this.nombre = nombre;
 		this.apellidos = apellidos;

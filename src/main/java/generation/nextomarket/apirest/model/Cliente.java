@@ -22,19 +22,14 @@ public class Cliente {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idcliente;
-
 	private String nombre;
-
 	private String descripcion;
-
 	private String logo;
 
 	public Cliente() {
-		super();
 	}
 
 	public Cliente(int idcliente, String nombre, String descripcion, String logo) {
-		super();
 		this.idcliente = idcliente;
 		this.nombre = nombre;
 		this.descripcion = descripcion;

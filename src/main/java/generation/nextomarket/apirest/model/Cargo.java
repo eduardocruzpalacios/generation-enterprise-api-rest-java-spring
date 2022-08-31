@@ -25,11 +25,9 @@ public class Cargo {
 	private String cargo;
 
 	public Cargo() {
-		super();
 	}
 
 	public Cargo(int idcargo, String cargo) {
-		super();
 		this.idcargo = idcargo;
 		this.cargo = cargo;
 	}

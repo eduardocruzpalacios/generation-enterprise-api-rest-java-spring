@@ -24,15 +24,10 @@ public class Proyecto {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idproyecto;
-
 	private String proyecto;
-
 	private String fechafin;
-
 	private String resumen;
-
 	private String descripcion;
-
 	private String imagen;
 
 	@ManyToOne
@@ -40,12 +35,10 @@ public class Proyecto {
 	private Cliente cliente;
 
 	public Proyecto() {
-		super();
 	}
 
 	public Proyecto(int idproyecto, String proyecto, String fechafin, String resumen, String descripcion, String imagen,
 			Cliente cliente) {
-		super();
 		this.idproyecto = idproyecto;
 		this.proyecto = proyecto;
 		this.fechafin = fechafin;
