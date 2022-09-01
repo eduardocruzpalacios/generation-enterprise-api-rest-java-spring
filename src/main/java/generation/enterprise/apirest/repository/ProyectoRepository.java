@@ -19,6 +19,6 @@ import generation.enterprise.apirest.model.Proyecto;
 @Repository
 public interface ProyectoRepository extends JpaRepository<Proyecto, Integer> {
 
-	public List<Proyecto> findById(int idproyecto);
+	public List<Proyecto> findById(int id);
 
 }

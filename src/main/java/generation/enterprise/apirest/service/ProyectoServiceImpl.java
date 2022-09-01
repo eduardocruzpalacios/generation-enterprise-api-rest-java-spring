@@ -39,7 +39,7 @@ public class ProyectoServiceImpl implements ProyectoService {
 	}
 
 	@Override
-	public void deleteById(Integer id) {
+	public void deleteById(int id) {
 		proyectoRepository.deleteById(id);
 	}
 

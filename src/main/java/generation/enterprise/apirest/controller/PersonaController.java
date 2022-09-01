@@ -39,13 +39,18 @@ public class PersonaController {
 		return personaService.findAll();
 	}
 
+	@GetMapping("/personas/{id}")
+	public List<Persona> readById(@PathVariable int id) {
+		return personaService.findById(id);
+	}
+
 	@PutMapping("/personas/{idpersona}/update")
 	public void update(@RequestBody Persona persona) {
 		personaService.save(persona);
 	}
 
 	@DeleteMapping("/personas/{id}/delete")
-	public void delete(@PathVariable("id") Integer id) {
+	public void delete(@PathVariable("id") int id) {
 		personaService.deleteById(id);
 	}
 

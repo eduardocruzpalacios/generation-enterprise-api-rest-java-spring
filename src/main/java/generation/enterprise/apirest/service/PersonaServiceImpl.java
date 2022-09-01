@@ -29,12 +29,17 @@ public class PersonaServiceImpl implements PersonaService {
 	}
 
 	@Override
+	public List<Persona> findById(int id) {
+		return personaRepository.findById(id);
+	}
+
+	@Override
 	public Persona save(Persona persona) {
 		return personaRepository.save(persona);
 	}
 
 	@Override
-	public void deleteById(Integer id) {
+	public void deleteById(int id) {
 		personaRepository.deleteById(id);
 	}
 

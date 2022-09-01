@@ -40,7 +40,7 @@ public class ProyectoController {
 	}
 
 	@GetMapping("/proyectos/{id}")
-	public List<Proyecto> readById(@PathVariable Integer id) {
+	public List<Proyecto> readById(@PathVariable int id) {
 		return proyectoService.findById(id);
 	}
 
@@ -50,7 +50,7 @@ public class ProyectoController {
 	}
 
 	@DeleteMapping("/proyectos/{id}/delete")
-	public void delete(@PathVariable Integer id) {
+	public void delete(@PathVariable int id) {
 		proyectoService.deleteById(id);
 	}
 

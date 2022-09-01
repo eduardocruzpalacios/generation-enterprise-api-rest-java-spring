@@ -21,6 +21,6 @@ public interface ProyectoService {
 
 	public Proyecto save(Proyecto proyecto);
 
-	public void deleteById(Integer id);
+	public void deleteById(int id);
 
 }

@@ -6,6 +6,35 @@
 	},
 	"item": [
 		{
+			"name": "personas/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"idproyecto\": null,\r\n        \"proyecto\": \"entry created just to test\",\r\n        \"fechafin\": \"2022\",\r\n        \"resumen\": \"bla bla bla\",\r\n        \"descripcion\": \"Z\",\r\n        \"imagen\": \"https://res.cloudinary.com/da0kscqzj/image/upload/v1621502297/proyectos/movieflix_ftzby8.jpg\",\r\n        \"cliente\": {\r\n            \"idcliente\": 7,\r\n            \"nombre\": \"Nexto Market\",\r\n            \"descripcion\": \"Cool Spanish Dev Company\",\r\n            \"logo\": \"https://res.cloudinary.com/da0kscqzj/image/upload/v1621498549/clientes/nextomarket_zig1sa.png\"\r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/personas/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"personas",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "personas",
 			"request": {
 				"method": "GET",
@@ -19,6 +48,26 @@
 					"port": "5000",
 					"path": [
 						"personas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "personas:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/personas/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"personas",
+						"4"
 					]
 				}
 			},
@@ -60,7 +109,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5000/personas/6/delete",
+					"raw": "http://localhost:5000/personas/7/delete",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -68,37 +117,8 @@
 					"port": "5000",
 					"path": [
 						"personas",
-						"6",
+						"7",
 						"delete"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "personas/create Copy",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n        \"idpersona\": null,\r\n        \"nombre\": \"create test\",\r\n        \"apellidos\": \"CT\",\r\n        \"resumen\": \"entry created just to test\",\r\n        \"foto\": \"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/User_font_awesome.svg/2048px-User_font_awesome.svg.png\",\r\n        \"cargo\": {\r\n            \"idcargo\": 6,\r\n            \"cargo\": \"BBDD dev\"\r\n        }\r\n    }",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:5000/personas/create",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "5000",
-					"path": [
-						"personas",
-						"create"
 					]
 				}
 			},

@@ -17,8 +17,10 @@ public interface PersonaService {
 
 	public List<Persona> findAll();
 
+	public List<Persona> findById(int id);
+
 	public Persona save(Persona persona);
 
-	public void deleteById(Integer id);
+	public void deleteById(int id);
 
 }
