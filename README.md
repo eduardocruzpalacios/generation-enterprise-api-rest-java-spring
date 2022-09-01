@@ -4,11 +4,13 @@ Generation enterprise API REST built JavaSE-11, Java Spring, Maven, SpringBoot, 
 ### Proyecto
 - Create one
 - Read all
+- Read one by id
 - Update one
 - Delete one
 ### Persona
 - Create one
 - Read all
+- Read one by id
 - Update one
 - Delete one
 ### Mensaje
