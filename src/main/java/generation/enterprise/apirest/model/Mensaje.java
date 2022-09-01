@@ -12,6 +12,7 @@ package generation.enterprise.apirest.model;
 
 import java.sql.Timestamp;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -25,6 +26,7 @@ public class Mensaje {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idmensaje;
+	@Column(name = "remitente")
 	private String from;
 	private Timestamp fecha;
 	private String subject;

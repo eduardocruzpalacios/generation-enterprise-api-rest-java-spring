@@ -1,7 +1,7 @@
 INSERT INTO
   generation_enterprise_db.mensajes (
     idmensaje,
-    `from`,
+    remitente,
     fecha,
     `subject`,
     mensaje,

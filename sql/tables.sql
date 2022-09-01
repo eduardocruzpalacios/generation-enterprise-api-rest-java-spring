@@ -48,7 +48,7 @@ ADD
 /* TABLE MENSAJES */
 CREATE TABLE generation_enterprise_db.mensajes (
   idmensaje INT NOT NULL AUTO_INCREMENT,
-  `from` VARCHAR(100) NOT NULL,
+  remitente VARCHAR(100) NOT NULL,
   fecha TIMESTAMP NOT NULL,
   `subject` VARCHAR(100) NOT NULL,
   mensaje VARCHAR(512) NOT NULL,
