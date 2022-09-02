@@ -28,4 +28,4 @@ API REST controller classes are tested with JUNIT and Mockito.
 ## API Documentation
 Swagger:
 - [http://localhost:5000/v2/api-docs](http://localhost:5000/v2/api-docs)
-- [http://localhost:5000/swagger-ui/](http://localhost:5000/swagger-ui/)
+- [http://localhost:5000/swagger-ui.html](http://localhost:5000/swagger-ui.html)
