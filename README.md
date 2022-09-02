@@ -24,8 +24,8 @@ SQL statements to create the database and table along with CRUD queries are prov
 ## Testing
 HTTP tests written on Postman are included as importable file.
 
-API REST controller classes are tested with JUNIT and Mockito.
-## API Documentation
-Swagger:
+API REST controller classes are tested with JUnit and Mockito.
+## API Documentation with Swagger
+Application must be running:
 - [http://localhost:5000/v2/api-docs](http://localhost:5000/v2/api-docs)
 - [http://localhost:5000/swagger-ui.html](http://localhost:5000/swagger-ui.html)
