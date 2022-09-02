@@ -5,6 +5,7 @@ Generation enterprise API REST built JavaSE-11, Java Spring, Maven, SpringBoot, 
 - Create one
 - Read all
 - Read one by id
+- Read by cliente
 - Update one
 - Delete one
 ### Persona

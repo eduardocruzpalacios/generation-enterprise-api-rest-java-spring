@@ -21,4 +21,6 @@ public interface ProyectoRepository extends JpaRepository<Proyecto, Integer> {
 
 	public List<Proyecto> findById(int id);
 
+	public List<Proyecto> findByCliente_idcliente(int id);
+
 }

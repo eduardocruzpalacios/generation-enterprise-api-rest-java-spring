@@ -44,6 +44,11 @@ public class ProyectoController {
 		return proyectoService.findById(id);
 	}
 
+	@GetMapping("/proyectos/cliente/{id}")
+	public List<Proyecto> readByCliente(@PathVariable int id) {
+		return proyectoService.findByCliente(id);
+	}
+
 	@PutMapping("/proyectos/{id}/update")
 	public void update(@RequestBody Proyecto proyecto) {
 		proyectoService.save(proyecto);

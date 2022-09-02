@@ -19,6 +19,8 @@ public interface ProyectoService {
 
 	public List<Proyecto> findById(int id);
 
+	public List<Proyecto> findByCliente(int id);
+
 	public Proyecto save(Proyecto proyecto);
 
 	public void deleteById(int id);

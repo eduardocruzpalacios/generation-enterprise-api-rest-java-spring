@@ -28,7 +28,6 @@ public class Persona {
 	private String apellidos;
 	private String resumen;
 	private String foto;
-
 	@ManyToOne
 	@JoinColumn(name = "cargo")
 	private Cargo cargo;

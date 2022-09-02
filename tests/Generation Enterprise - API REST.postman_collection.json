@@ -207,6 +207,34 @@
 			"response": []
 		},
 		{
+			"name": "proyectos/cliente/:id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/proyectos/cliente/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"proyectos",
+						"cliente",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "proyectos/:id/update",
 			"request": {
 				"method": "PUT",

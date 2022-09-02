@@ -34,6 +34,11 @@ public class ProyectoServiceImpl implements ProyectoService {
 	}
 
 	@Override
+	public List<Proyecto> findByCliente(int id) {
+		return proyectoRepository.findByCliente_idcliente(id);
+	}
+
+	@Override
 	public Proyecto save(Proyecto proyecto) {
 		return proyectoRepository.save(proyecto);
 	}

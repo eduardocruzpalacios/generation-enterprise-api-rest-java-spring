@@ -29,7 +29,6 @@ public class Proyecto {
 	private String resumen;
 	private String descripcion;
 	private String imagen;
-
 	@ManyToOne
 	@JoinColumn(name = "empresa")
 	private Cliente cliente;
