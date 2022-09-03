@@ -50,7 +50,7 @@ public class PersonaController {
 	}
 
 	@DeleteMapping("/personas/{id}/delete")
-	public void delete(@PathVariable("id") int id) {
+	public void delete(@PathVariable int id) {
 		personaService.delete(id);
 	}
 
