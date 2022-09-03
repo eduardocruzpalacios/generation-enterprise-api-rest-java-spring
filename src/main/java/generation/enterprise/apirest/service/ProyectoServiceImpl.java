@@ -24,6 +24,11 @@ public class ProyectoServiceImpl implements ProyectoService {
 	ProyectoRepository proyectoRepository;
 
 	@Override
+	public Proyecto create(Proyecto proyecto) {
+		return proyectoRepository.save(proyecto);
+	}
+
+	@Override
 	public List<Proyecto> findAll() {
 		return proyectoRepository.findAll();
 	}
@@ -39,12 +44,12 @@ public class ProyectoServiceImpl implements ProyectoService {
 	}
 
 	@Override
-	public Proyecto save(Proyecto proyecto) {
+	public Proyecto update(Proyecto proyecto) {
 		return proyectoRepository.save(proyecto);
 	}
 
 	@Override
-	public void deleteById(int id) {
+	public void delete(int id) {
 		proyectoRepository.deleteById(id);
 	}
 

@@ -31,16 +31,16 @@ public class ProyectoController {
 
 	@PostMapping("/proyectos/create")
 	public void create(@RequestBody Proyecto proyecto) {
-		proyectoService.save(proyecto);
+		proyectoService.create(proyecto);
 	}
 
 	@GetMapping("/proyectos")
-	public List<Proyecto> readAll() {
+	public List<Proyecto> findAll() {
 		return proyectoService.findAll();
 	}
 
 	@GetMapping("/proyectos/{id}")
-	public List<Proyecto> readById(@PathVariable int id) {
+	public List<Proyecto> finadById(@PathVariable int id) {
 		return proyectoService.findById(id);
 	}
 
@@ -51,12 +51,12 @@ public class ProyectoController {
 
 	@PutMapping("/proyectos/{id}/update")
 	public void update(@RequestBody Proyecto proyecto) {
-		proyectoService.save(proyecto);
+		proyectoService.update(proyecto);
 	}
 
 	@DeleteMapping("/proyectos/{id}/delete")
 	public void delete(@PathVariable int id) {
-		proyectoService.deleteById(id);
+		proyectoService.delete(id);
 	}
 
 }

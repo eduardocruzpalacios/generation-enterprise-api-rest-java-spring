@@ -15,14 +15,16 @@ import generation.enterprise.apirest.model.Proyecto;
 
 public interface ProyectoService {
 
+	public Proyecto create(Proyecto proyecto);
+
 	public List<Proyecto> findAll();
 
 	public List<Proyecto> findById(int id);
 
 	public List<Proyecto> findByCliente(int id);
 
-	public Proyecto save(Proyecto proyecto);
+	public Proyecto update(Proyecto proyecto);
 
-	public void deleteById(int id);
+	public void delete(int id);
 
 }

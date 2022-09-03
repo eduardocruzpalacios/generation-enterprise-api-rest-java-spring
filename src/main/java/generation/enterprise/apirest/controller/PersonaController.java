@@ -31,27 +31,27 @@ public class PersonaController {
 
 	@PostMapping("/personas/create")
 	public void create(@RequestBody Persona persona) {
-		personaService.save(persona);
+		personaService.create(persona);
 	}
 
 	@GetMapping("/personas")
-	public List<Persona> readAll() {
+	public List<Persona> findAll() {
 		return personaService.findAll();
 	}
 
 	@GetMapping("/personas/{id}")
-	public List<Persona> readById(@PathVariable int id) {
+	public List<Persona> findById(@PathVariable int id) {
 		return personaService.findById(id);
 	}
 
 	@PutMapping("/personas/{idpersona}/update")
 	public void update(@RequestBody Persona persona) {
-		personaService.save(persona);
+		personaService.update(persona);
 	}
 
 	@DeleteMapping("/personas/{id}/delete")
 	public void delete(@PathVariable("id") int id) {
-		personaService.deleteById(id);
+		personaService.delete(id);
 	}
 
 }

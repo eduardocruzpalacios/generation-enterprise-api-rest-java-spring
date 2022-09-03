@@ -17,6 +17,6 @@ public interface MensajeService {
 
 	public List<Mensaje> findAll();
 
-	public Mensaje save(Mensaje mensaje);
+	public Mensaje create(Mensaje mensaje);
 
 }

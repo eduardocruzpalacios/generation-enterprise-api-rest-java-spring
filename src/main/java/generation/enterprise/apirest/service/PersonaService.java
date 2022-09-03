@@ -15,12 +15,14 @@ import generation.enterprise.apirest.model.Persona;
 
 public interface PersonaService {
 
+	public Persona create(Persona persona);
+
 	public List<Persona> findAll();
 
 	public List<Persona> findById(int id);
 
-	public Persona save(Persona persona);
+	public Persona update(Persona persona);
 
-	public void deleteById(int id);
+	public void delete(int id);
 
 }

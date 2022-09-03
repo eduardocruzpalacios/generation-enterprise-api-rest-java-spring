@@ -28,7 +28,7 @@ public class MensajeController {
 
 	@PostMapping("/mensajes/create")
 	public void create(@RequestBody Mensaje mensaje) {
-		mensajeService.save(mensaje);
+		mensajeService.create(mensaje);
 	}
 
 	@GetMapping("/mensajes")
