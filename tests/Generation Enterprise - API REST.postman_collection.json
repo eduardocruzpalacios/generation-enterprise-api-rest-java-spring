@@ -378,6 +378,25 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "clientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"clientes"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
