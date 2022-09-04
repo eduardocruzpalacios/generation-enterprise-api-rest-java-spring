@@ -17,6 +17,8 @@ Generation enterprise API REST built JavaSE-11, Java Spring, Maven, SpringBoot, 
 ### Mensaje
 - Create one
 - Read all
+### Cargo
+- Read all
 ## Data Source
 MySQL database.
 
