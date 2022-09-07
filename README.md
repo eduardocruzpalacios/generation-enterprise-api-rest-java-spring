@@ -1,5 +1,5 @@
 # Generation Enterprise API REST
-Generation enterprise API REST built JavaSE-11, Java Spring, Maven, SpringBoot, RestTemplate, Hibernate (JPA) and SpringData JPA.
+Generation enterprise API REST built with JavaSE-11, Java Spring, Maven, SpringBoot, RestTemplate, Hibernate (JPA) and SpringData JPA.
 ## Functionality
 ### Proyecto
 - Create one
